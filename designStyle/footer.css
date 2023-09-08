@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+:root{
+  --white:hsl(0, 0%, 100%);
+  --Pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+  --open: 'Open Sans', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --border-radius: 25px; 
+}
+
+footer {
+  background: var(--VeryDarkCyan);
+  position: relative;
+  color: var(--white);
+  padding-top: 10rem;
+}
+
+.floater_container > h3 {
+  color: var(--VeryDarkCyan);
+  font-size: 1.5rem;
+}
+
+footer .floater_container{
+  text-align: center;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.29), 6px 5px 13px -3px rgba(0, 0, 0, 0.16);
+  padding: 3rem 5rem;
+  position: absolute;
+  top: -1%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.footerbox{
+  padding: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+
+.footerText{
+  display: flex;
+  align-items: center;
+}
+.footerText p{
+  width: 20rem;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.footer_text3{
+  display: flex;
+  gap: 2rem;
+  font-weight: 700;
+  margin: auto 0;
+}
+
+.footerBoxes:nth-child(2){
+  align-self: center;
+  font-size: 17px;
+}
+
+.footer_icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16rem;
+}
+
+.iconbox img{
+  margin-right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: .20s ease-in-out;
+}
+
+
+.footer_icon p{
+  font-weight: 700;
+}
+
+.oneIcon:hover{
+  color: var(--Pink);
+  cursor: pointer;
+  background: var(--Pink);
+  border: none;
+  transform: scale(1.1);
+}
+
+
+.logofoter{
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1) grayscale(100%) sepia(100%) saturate(0);
+}
+
+@media screen and (max-width:975px) {
+  .footerbox{
+    flex-direction: column;
+  }
+  .footerBoxes:nth-child(2){
+    align-self: flex-start;
+  }
+  .footerBoxes:nth-child(3){
+    align-self: center;
+  }
+  .footer_text3{
+    flex-direction: column;
+    gap: 0;
+  }
+  .iconbox{
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .footer_icon{
+    justify-content: start;
+  }
+  footer .floater_container{
+    width: 50%;
+  }
+  .footerbtn{
+    font-size: 10px;
+  }
+
+ 
+
+}
+
+@media screen and (max-width:375px) {
+  footer .floater_container{
+    width: 50%;
+  }
+  .floater_container > h3 {
+    font-size: 10px;
+  }
+  .footerbtn{
+    font-size: 12px;
+  }
+}
